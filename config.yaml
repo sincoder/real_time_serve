@@ -1,0 +1,61 @@
+env: local
+configs:
+  local:
+    public_pem_path: "./cert/dji_com.crt"
+    private_pem_path: "./cert/dji_com.key"
+
+    server_port: 7777
+
+    websocket_port: 7776
+    websocket_auth_token: "dbeta_dUMMbuajxEAXcfEjQ46NqiUgQmQQQ"
+
+    gateway: "gateway-stg-alihz.aasky.net:9000"
+    gateway_app_id: "dji_ag"
+    gateway_app_key: "31ee39e0-5641-4e15-9b11-fbbd24cbdfb2"
+
+    database: "root:@tcp(localhost:3306)/db_iuav"
+
+  test:
+    public_pem_path: "./cert/dji_com.crt"
+    private_pem_path: "./cert/dji_com.key"
+
+    server_port: 7777
+
+    websocket_port: 7776
+    websocket_auth_token: "dbeta_dUMMbuajxEAXcfEjQ46NqiUgQmQQQ"
+
+    gateway: "gateway-stg-alihz.aasky.net:9000"
+    gateway_app_id: "dji_ag"
+    gateway_app_key: "31ee39e0-5641-4e15-9b11-fbbd24cbdfb2"
+
+    database: "db_iuav:Ck7rJaA38YK8H@tcp(rm-bp14ptw0f4nfx64xy.mysql.rds.aliyuncs.com:3306)/db_iuav"
+
+  pro:
+    public_pem_path: "./cert/dji_com.crt"
+    private_pem_path: "./cert/dji_com.key"
+
+    server_port: 7777
+
+    websocket_port: 7776
+    websocket_auth_token: "dbeta_dUMMbuajxEAXcfEjQ46NqiUgQmQQQ"
+
+    gateway: "gateway-alihzvpc.dji.com:9000"
+    gateway_app_id: "dji_ag"
+    gateway_app_key: "0cc16319-3593-44a9-a648-eb4e17ef601d"
+
+    database: "root_dji:3WY40AqYUaHSe@tcp(rm-bp1gx742ui4a42lqw.mysql.rds.aliyuncs.com:3306)/db_dji"
+
+  other:
+    public_pem_path: "./cert/dji_com.crt"
+    private_pem_path: "./cert/dji_com.key"
+
+    server_port: 7777
+
+    websocket_port: 7776
+    websocket_auth_token: "dbeta_dUMMbuajxEAXcfEjQ46NqiUgQmQQQ"
+
+    gateway: "gateway-awsus.dji.com:9000"
+    gateway_app_id: "dji_ag"
+    gateway_app_key: "0cc16319-3593-44a9-a648-eb4e17ef601d"
+
+    database: "iuav:Md8CJn2yrpKbWrUPBje7vddf@tcp(seoul-iuav-prod.cxhbcyqxgmgz.ap-northeast-2.rds.amazonaws.com:3306)/iuav"
